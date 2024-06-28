@@ -29,7 +29,7 @@ def on_chat():
 
 def chat_ui():
     
-    if prompt:=st.chat_input('Start',key='prompt',on_submit=on_chat):
+    if prompt:=st.chat_input('Start✨',key='prompt',on_submit=on_chat):
         with st.chat_message('user'):
             st.write(prompt)
         with st.chat_message('assistant'):
