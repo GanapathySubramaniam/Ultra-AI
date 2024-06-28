@@ -9,5 +9,22 @@ if 'chat_history' not in sess:
 
 
 def display_chat():
+    ...
+
+def sidebar():
+    with st.sidebar:
+        st.title("God's Eye")
+def chat_ui():
+   
+    with st.chat_message('user'):
+        st.write(prompt)
+
+    if prompt:=st.chat_input('Start'):
+         display_chat()
+        with st.chat_input('assistant'):
+            st.write_stream(sess.model.create_chat(prompt))
+
+
+
     
 
