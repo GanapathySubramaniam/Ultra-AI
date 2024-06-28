@@ -1,4 +1,4 @@
-from api_keys import anthropic_api_key
+from .api_keys import anthropic_api_key
 from anthropic import Anthropic
 
 class Chat:

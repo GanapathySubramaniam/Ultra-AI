@@ -9,20 +9,28 @@ if 'chat_history' not in sess:
 
 
 def display_chat():
-    ...
+    for content in sess.model.get_history():
+        with st.chat_message(content['role']):
+            st.write(content['content'])
 
 def sidebar():
     with st.sidebar:
         st.title("God's Eye")
-def chat_ui():
-   
-    with st.chat_message('user'):
-        st.write(prompt)
+        if st.button('Clear history'):
+            sess.model.clear_history()
+def on_chat():
+    display_chat()
 
-    if prompt:=st.chat_input('Start'):
-         display_chat()
-        with st.chat_input('assistant'):
-            st.write_stream(sess.model.create_chat(prompt))
+def chat_ui():
+    
+    if prompt:=st.chat_input('Start',key='prompt',on_submit=on_chat):
+        with st.chat_message('user'):
+            st.write(prompt)
+        with st.chat_message('assistant'):
+            st.write_stream(sess.model.stream_chat(prompt))
+
+sidebar()
+chat_ui()
 
 
 
