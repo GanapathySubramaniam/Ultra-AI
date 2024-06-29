@@ -1,0 +1,16 @@
+
+    [data-testid='stFileUploader'] {
+        width: max-content;
+    }
+    [data-testid='stFileUploader'] section {
+        padding: 0;
+        float: center;
+    }
+    [data-testid='stFileUploader'] section > input + div {
+        display: none;
+    }
+    [data-testid='stFileUploader'] section + div {
+        float: center;
+        padding-top: 0;
+    }
+
