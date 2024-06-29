@@ -1,10 +1,10 @@
 
     [data-testid='stFileUploader'] {
-        width: max-content;
+        width: fit-content;
     }
     [data-testid='stFileUploader'] section {
         padding: 0;
-        float: center;
+        float: inline-start;
     }
     [data-testid='stFileUploader'] section > input + div {
         display: none;
