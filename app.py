@@ -53,6 +53,8 @@ def sidebar():
             if st.button('🗑️',key='clear'):
                 sess.display=False
                 sess.model.clear_history()
+        if st.button('🔊'):
+            ...
                 
         placeholder=st.expander('👑')
         if settings | sess.settings:
