@@ -4,7 +4,12 @@ def app():
     with st.sidebar:
         st.title('Prompt Generator🪄')
     if prompt:=st.chat_input('Specify a task⚔️'):
-        st.write_stream(prompt_gen(prompt))
+        with st.spinner('Generating Prompt🪄'):
+            with st.expander('Writing Prompt✏️'):
+                response=st.write_stream(prompt_gen(prompt))
+        
+            st.code(response)
+        
 
 
 app()

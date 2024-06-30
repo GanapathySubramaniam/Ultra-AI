@@ -30,5 +30,6 @@ def prompt_gen(task):
                 text = chunk.delta.text
                 yield text
                 full_response += text
+    return full_response
           
 
