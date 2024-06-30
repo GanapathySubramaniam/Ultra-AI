@@ -5,64 +5,79 @@ from glob import glob
 
 if 'model' not in sess:
     sess.model=Chat()
-if 'chat_history' not in sess:
-    sess.chat_history={'role':[],'type':[],'content':[]}
+
+def check_add_states(key,val):
+    if key not in sess:
+        sess[key]=val
 
 
-def display_chat():
+check_add_states('chat_history',{'role':[],'type':[],'content':[]})
+check_add_states('temp',sess.model.temperature)
+check_add_states('max_tok',sess.model.max_tokens)
+check_add_states('sys_inst',sess.model.system_instructions)
+buttons=['settings','camera_inp','files_inp','clear','display']
+
+
+for btn in buttons:
+    check_add_states(btn,False)
+
+def refresh_params():
+    sess.model.system_instructions=sess.sys_inst
+    sess.model.temperature=sess.temp
+    sess.model.max_tokens=sess.max_tok
+    sess.settings=True
+
+if sess.display:
     for content in sess.model.get_history():
         with st.chat_message(content['role']):
             st.write(content['content'])
 
-
-
 def sidebar():
     with st.sidebar:
         st.title("God's Eye")
-        c4,c5,c6,c1,c2,c3=st.columns(6)
-        camera_expander=st.expander('📷')
-        file_expander=st.expander('📁')
-        expander=st.expander('⚙️')
-        with c6:
-            if st.button('⚙️'):
-                sess.model.system_instructions=expander.text_area('System Instructions')
-                sess.model.temperature=expander.slider('Temperature',min_value=0.1,max_value=1.0,step=0.1,value=1.0)
-                sess.model.max_tokens=expander.select_slider('Max Tokens',[100,500,1000],value=500)
-            
+        c1,c2,c3,c4=st.columns(4,gap='small',vertical_alignment='center')
         with c1:
-            if st.button('📷'):
-                    camera_expander.camera_input('📷',disabled=False,key='camera')
+            settings=st.button('⚙️')
+               
         with c2:
-            if st.button('📁'):
-                file_expander.file_uploader('🖇️',accept_multiple_files=True,label_visibility='hidden',key='files')
+            cam=st.button('📷')
+                    
         with c3:
-            if st.button('🗑️'):
+            files= st.button('📁')
+                
+        with c4:
+            if st.button('🗑️',key='clear'):
+                sess.display=False
                 sess.model.clear_history()
+                
+        placeholder=st.expander('👑')
+        if settings | sess.settings:
+            with placeholder:
+                st.text_area('System Instructions',key='sys_inst',value=sess.sys_inst,on_change=refresh_params)
+                st.slider('Temperature',key='temp',min_value=0.1,value=sess.temp,max_value=1.0,step=0.1,on_change=refresh_params)
+                st.select_slider('Max Tokens',[100,500,1000,1500],value=sess.max_tok,key='max_tok',on_change=refresh_params)
+        if cam | sess.camera_inp:
+            with placeholder:
+                st.camera_input('📷',disabled=False,key='camera')
+        if files | sess.files_inp:
+            with placeholder:
+                st.file_uploader('🖇️',accept_multiple_files=True,label_visibility='hidden',key='files')
+             
+
       
         
-def on_chat():
-    display_chat()
+
 
 def chat_ui():
-    if prompt:=st.chat_input('Start✨',key='prompt',on_submit=on_chat):
+    if prompt:=st.chat_input('Start✨',key='prompt'):
+        sess.display=True
         with st.chat_message('user'):
             st.write(prompt)
         with st.chat_message('assistant'):
             st.write_stream(sess.model.stream_chat(prompt))
 
-def apply_styles():
-    style_markdowns=[]
-    for css_file_path in glob('styles/*.css'):
-        with open(css_file_path) as css_file:
-            style_markdowns.append(css_file.read())
-
-    style_markdowns='\n'.join(style_markdowns)
-    style_tag='<style>{markdown}</style'.format(markdown=style_markdowns)
-    st.markdown(style_tag,unsafe_allow_html=True)
-
 
 def app():
-    apply_styles()
     sidebar()
     chat_ui()
 
