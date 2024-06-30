@@ -1,3 +1,7 @@
+'''
+!!!!! Clear button needs to be clicked twice 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+'''
 import streamlit as st
 from streamlit import session_state as sess
 from models.claude import Chat
