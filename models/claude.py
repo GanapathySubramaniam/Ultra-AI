@@ -27,7 +27,7 @@ class Chat:
                     text = chunk.delta.text
                     yield text
                     full_response += text
-        self.add_message('assistant', full_response)
+        self.add_message('assistant',[{"type":"text","text": full_response}])
 
     def clear_history(self):
         self.messages.clear()
