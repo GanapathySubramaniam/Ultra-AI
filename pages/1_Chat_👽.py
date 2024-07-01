@@ -41,10 +41,11 @@ def check_for_file_uploads():
 
 def get_image():
     img=sess.camera
-    img_data=b64encode(img.getvalue()).decode("utf-8")
-    img_content={"type":"image"}
-    img_content['source']={"type": "base64","media_type":img.type ,"data":img_data}
-    sess.prompt.append(img_content)
+    if img:
+        img_data=b64encode(img.getvalue()).decode("utf-8")
+        img_content={"type":"image"}
+        img_content['source']={"type": "base64","media_type":img.type ,"data":img_data}
+        sess.prompt.append(img_content)
 
 def refresh_params():
     sess.model.system_instructions=sess.sys_inst
