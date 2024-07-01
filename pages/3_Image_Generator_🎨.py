@@ -1,5 +1,6 @@
 import streamlit as st 
 from streamlit import session_state as sess
+import streamlit_authenticator as stauth
 from models.openai import image_gen_model
 
 if 'image_model' not in sess:
@@ -31,8 +32,11 @@ def image_chat_ui():
         sess.image_model.image_chat(prompt)
         display_image_chat()
 
-def image_chat():
+def app():
     display_image_sidebar()
     image_chat_ui()
 
-image_chat()
+if st.session_state["authentication_status"]:
+    app()
+else:
+    st.write('Login to use!')

@@ -1,4 +1,5 @@
 import streamlit as st
+from auth import login
 from models.prompt_generator import prompt_gen
 def app():
     with st.sidebar:
@@ -10,7 +11,7 @@ def app():
         
             st.code(response)
         
-
-
-app()
-
+if st.session_state["authentication_status"]:
+    app()
+else:
+    st.write('Login to use!')

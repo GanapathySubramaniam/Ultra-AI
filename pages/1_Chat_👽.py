@@ -4,6 +4,7 @@
 '''
 import streamlit as st
 from streamlit import session_state as sess
+from auth import login
 from models.claude import Chat
 from models.openai import tts
 from glob import glob
@@ -87,7 +88,9 @@ def app():
     sidebar()
     chat_ui()
 
-
-app()
+if st.session_state["authentication_status"]:
+    app()
+else:
+    st.write('Login to use!')
     
 
