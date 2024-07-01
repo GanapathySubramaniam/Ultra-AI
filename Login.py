@@ -1,6 +1,6 @@
 import streamlit as st
 from auth import login
-
+st.session_state["authentication_status"]=False
 st.set_page_config(
     page_title="Ultra AI",
     page_icon="🧊",
