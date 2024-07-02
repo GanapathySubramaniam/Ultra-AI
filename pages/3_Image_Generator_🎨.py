@@ -9,15 +9,19 @@ if 'recent_image' not in sess:
 
 if 'image_model' not in sess:
     sess['image_model']=image_gen_model()
-
+for img in sess.image_model.images:
+    with st.sidebar:
+        st.image(img)
 def display_image_chat():
     for message in sess.image_model.history:
-        with st.chat_message(message["role"]):
-            if message['type']=='text':
-                st.markdown(message["content"])
-            else:
-                 sess.recent_image=message['content']
-                 st.image(message['content'])
+        if (message['role']=='user'):
+            with st.chat_message('user'):
+                    st.markdown(message["content"])
+        else:
+            if (message['type']=='image'):
+                with st.chat_message('assitant'):
+                    sess.recent_image=message['content']
+                    st.image(message['content'])
 
 def display_image_sidebar():
     with st.sidebar:
