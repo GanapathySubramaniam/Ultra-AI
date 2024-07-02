@@ -141,11 +141,6 @@ if st.session_state["authentication_status"]:
             sess.files=False
         copy()
 
-
-
-
-
-
 else:
     st.write('Login to use!')
     
