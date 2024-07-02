@@ -67,8 +67,13 @@ def clear_contents():
     sess.model.temperature=sess.model.temperature
     sess.model.max_tokens=sess.model.max_tokens
 
-
-
+def copy():
+      with st.sidebar:
+        with st.expander('📋',):
+                try:
+                    st.code(sess.model.get_history()[-1]['content'][0]['text'])
+                except Exception as e:
+                    st.code("...")
 if st.session_state["authentication_status"]:
     if sess.display:
         for contents in sess.model.get_history():
@@ -110,7 +115,7 @@ if st.session_state["authentication_status"]:
                             st.audio(tts(sess.model.get_history()[-1]['content']),autoplay=True)
                         except Exception as e:
                             print(e)
-            
+      
 
     if prompt:=st.chat_input('Start✨',key='prompt_inp'):
         prompt={"type":"text","text":prompt}
@@ -124,6 +129,7 @@ if st.session_state["authentication_status"]:
             st.write_stream(sess.model.stream_chat(sess.prompt))
             sess.prompt=[]
             sess.files=False
+        copy()
 
 
 
