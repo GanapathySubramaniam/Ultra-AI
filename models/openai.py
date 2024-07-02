@@ -15,6 +15,7 @@ class image_gen_model:
         self.size="1024x1024"
         self.quality="standard"
         self.history=[]
+        self.style='natural' 
 
     def add_message(self,role,content,content_type):
         self.history.append({'role':role,'content':content,'type':content_type})
@@ -25,6 +26,7 @@ class image_gen_model:
                                                 prompt=prompt,
                                                 size=self.size,
                                                 quality=self.quality,
+                                                style=self.style,
                                                 n=1,
                                                 )
 

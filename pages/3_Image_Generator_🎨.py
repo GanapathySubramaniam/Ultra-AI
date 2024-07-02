@@ -25,6 +25,7 @@ def display_image_sidebar():
         image_qualities=['standard','hd'] 
         sess.image_model.size=st.selectbox('Image Size',image_sizes)
         sess.image_model.quality=st.selectbox('Image Quality',image_qualities)
+        sess.image_model.style=st.select_slider('Style',['natural','vivid'] )
 
         c1,c2=st.columns(2)
         with c1:
