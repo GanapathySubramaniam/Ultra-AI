@@ -4,6 +4,8 @@ from models.prompt_generator import prompt_gen
 def app():
     with st.sidebar:
         st.title('Prompt Generator🪄')
+        if st.button('Clear Prompt'):
+            st.session_state.clear()
     if prompt:=st.chat_input('Specify a task⚔️'):
         with st.spinner('Generating Prompt🪄'):
             with st.expander('Writing Prompt✏️'):
