@@ -87,30 +87,40 @@ if st.session_state["authentication_status"]:
 
     with st.sidebar:
         st.title("Chat 👽")
-        placeholder=st.expander('👑')
+        settings_placeholder=st.expander('⚙️')
+        camera_placeholder=st.expander('📷')
+        files_placeholder=st.expander('📁')
+        audio_placeholder=st.expander('🔊')
+
         with st.expander('🛠️'):
             c1,c2,c3,c4,c5=st.columns(5,gap='small',vertical_alignment='center')
             with c1:
                 if st.button('⚙️',on_click=callback,args=['settings']) | sess.settings:
-                    with placeholder:
+                    sess.camera_inp=False
+                    sess.files=False
+                    with settings_placeholder:
                         st.text_area('System Instructions',key='sys_inst',value=sess.sys_inst,on_change=refresh_params)
                         st.slider('Temperature',key='temp',min_value=0.1,value=sess.temp,max_value=1.0,step=0.1,on_change=refresh_params)
                         st.select_slider('Max Tokens',[100,500,1000,1500],value=sess.max_tok,key='max_tok',on_change=refresh_params)
             with c2:
                 if st.button('📷',on_click=callback,args=['camera_inp']) | sess.camera_inp:
-                    with placeholder:
+                    sess.files=False
+                    sess.settings=False
+                    with camera_placeholder:
                         st.camera_input('📷',disabled=False,key='camera',on_change=get_image)
                         
             with c3:
                 if st.button('📁',on_click=callback,args=['files']) | sess.files:
-                    with placeholder:
+                    sess.settings=False
+                    sess.camera_inp=False
+                    with files_placeholder:
                         st.file_uploader('🖇️',accept_multiple_files=True,label_visibility='hidden',key='files_upload',on_change=check_for_file_uploads)
             with c4:
                 st.button('🗑️',key='clear',on_click=clear_contents)
                     
             with c5:
                 if st.button('🔊',on_click=callback,args=['audio']):
-                    with placeholder:
+                    with audio_placeholder:
                         try:
                             st.audio(tts(sess.model.get_history()[-1]['content']),autoplay=True)
                         except Exception as e:
