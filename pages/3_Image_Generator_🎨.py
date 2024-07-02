@@ -2,6 +2,10 @@ import streamlit as st
 from streamlit import session_state as sess
 import streamlit_authenticator as stauth
 from models.openai import image_gen_model
+from datetime import datetime
+
+if 'recent_image' not in sess:
+    sess.recent_image=None
 
 if 'image_model' not in sess:
     sess['image_model']=image_gen_model()
@@ -12,6 +16,7 @@ def display_image_chat():
             if message['type']=='text':
                 st.markdown(message["content"])
             else:
+                 sess.recent_image=message['content']
                  st.image(message['content'])
 
 def display_image_sidebar():
@@ -25,6 +30,14 @@ def display_image_sidebar():
         with c1:
             if st.button('Clear Chat'):
                 sess.image_model.clear_history()
+        with c2:
+            if sess.recent_image:
+                st.download_button(
+                        label="Download Generated image",
+                        data=sess.recent_image,
+                        file_name=f"Generated_image_{datetime.now().timestamp()}.png",
+                        mime="image/png"
+                    )
   
 def image_chat_ui():  
     display_image_chat()
