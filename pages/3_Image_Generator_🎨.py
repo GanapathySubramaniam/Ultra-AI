@@ -28,7 +28,7 @@ def display_image_sidebar():
   
 def image_chat_ui():  
     display_image_chat()
-    if prompt := st.chat_input("Creativity is imagination in Reality! Let's create!"):
+    if prompt := st.chat_input("Creativity is imagination in Reality! Let's create!🖌️"):
         sess.image_model.image_chat(prompt)
         display_image_chat()
 
