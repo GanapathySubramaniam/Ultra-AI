@@ -70,7 +70,7 @@ class image_gen_model:
         
     def image_chat(self,prompt):
         self.add_message('user',prompt,'text')
-        if len(self.history)>0:
+        if len(self.history)>2:
                 prompt=f'#Original Prompt {self.revised_prompt[-1]} #Edit  {prompt}'
         image,revised_prompt=self.generate_image(prompt)
         self.add_message('assistant',image,'image')
