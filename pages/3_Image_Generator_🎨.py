@@ -1,6 +1,5 @@
 import streamlit as st 
 from streamlit import session_state as sess
-import streamlit_authenticator as stauth
 from models.openai import image_gen_model
 from datetime import datetime
 
