@@ -4,6 +4,13 @@ import streamlit_authenticator as stauth
 from models.openai import image_gen_model
 from datetime import datetime
 
+st.set_page_config(
+    page_title="Image",
+    page_icon="🧊",
+    initial_sidebar_state="expanded",
+)
+
+
 if 'recent_image' not in sess:
     sess.recent_image=None
 
@@ -54,7 +61,8 @@ def app():
     display_image_sidebar()
     image_chat_ui()
 
-if st.session_state["authentication_status"]:
-    app()
-else:
-    st.write('Login to use!')
+with open('Login.txt') as f:
+    if f.read()=='True':
+        app()
+    else:
+        st.write('Please Login!')

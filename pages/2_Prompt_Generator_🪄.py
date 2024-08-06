@@ -1,6 +1,11 @@
 import streamlit as st
-from auth import login
 from models.prompt_generator import prompt_gen
+st.set_page_config(
+    page_title="Prompt",
+    page_icon="🧊",
+    initial_sidebar_state="expanded",
+)
+
 def app():
     with st.sidebar:
         st.title('Prompt Generator🪄')
@@ -13,7 +18,9 @@ def app():
         
             st.code(response)
         
-if st.session_state["authentication_status"]:
-    app()
-else:
-    st.write('Login to use!')
+with open('Login.txt') as f:
+    if f.read()=='True':
+        app()
+    else:
+        st.write('Please Login!')
+

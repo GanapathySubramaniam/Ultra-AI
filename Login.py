@@ -1,5 +1,8 @@
 import streamlit as st
-from auth import login
+from streamlit import session_state as sess
+
+with open('Login.txt','w') as f:
+        f.write('False')
 
 st.set_page_config(
     page_title="Ultra AI",
@@ -7,6 +10,12 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-st.header('Login 🗝️')
+with open('pwd.txt') as f:
+     pwd=f.read()
 
-login()
+st.header('Login 🗝️')
+if st.text_input('pwd')==pwd:
+    with open('Login.txt','w') as f:
+        f.write('True')
+
+

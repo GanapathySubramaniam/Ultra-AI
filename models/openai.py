@@ -2,6 +2,7 @@ from openai import OpenAI
 import requests
 from PIL import Image
 import io
+import functools
 
 from .api_keys import openai_api_key
 client=OpenAI(api_key=openai_api_key)
@@ -12,6 +13,16 @@ def tts(prompt):
     male_response.write_to_file(f'{file_name}')
     return file_name
 
+
+@functools.lru_cache(maxsize=100)
+def tts2(prompt):
+    response = client.audio.speech.create(
+        model="tts-1-hd",  # Using a faster, more efficient model
+        voice='nova',
+        input=str(prompt),
+        speed=1  
+    )
+    return response.content
 
 def convert_to_rgba(image_bytes):
     image = Image.open(io.BytesIO(image_bytes))
@@ -24,6 +35,19 @@ def download_image(image_url):
     response = requests.get(image_url)
     response.raise_for_status() 
     return convert_to_rgba(response.content)
+
+
+def transcribe_audio(audio_bytes):
+        try:
+            audio_file = io.BytesIO(audio_bytes)
+            audio_file.name = 'audio.wav'  
+            transcript = client.audio.transcriptions.create(
+                model="whisper-1", 
+                file=audio_file
+            )
+            return transcript.text
+        except Exception as e:
+            return f"An error occurred during transcription: {str(e)}"
 
 
 class image_gen_model:
@@ -78,3 +102,40 @@ class image_gen_model:
 
     def clear_history(self):
         self.history.clear()
+
+
+class ChatGPT:
+    def __init__(self):
+        self.client = OpenAI(api_key=openai_api_key)
+        self.messages = []
+        self.temperature = 0.7
+        self.max_tokens = 50
+        self.system_instructions = 'You are a concise and quick-responding AI assistant.'
+
+    def add_message(self, role, content):
+        self.messages.append({'role': role, 'content': content})
+
+    def stream_chat(self, prompt_content):
+        self.add_message('user', prompt_content)
+        stream = self.client.chat.completions.create(
+            model="gpt-3.5-turbo",
+            messages=[{"role": "system", "content": self.system_instructions}] + self.messages,
+            max_tokens=self.max_tokens,
+            temperature=self.temperature,
+            stream=True
+        )
+        
+        full_response = ""
+        for chunk in stream:
+            if chunk.choices[0].delta.content is not None:
+                text = chunk.choices[0].delta.content
+                yield text
+                full_response += text
+        
+        self.add_message('assistant', full_response)
+
+    def clear_history(self):
+        self.messages.clear()
+
+    def get_history(self):
+        return self.messages

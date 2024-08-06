@@ -1,5 +1,7 @@
 anthropic
 openai
 streamlit
-streamlit_authenticator
+streamlit-mic-recorder
 python-dotenv
+SpeechRecognition
+st_pages
