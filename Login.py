@@ -14,8 +14,11 @@ with open('pwd.txt') as f:
      pwd=f.read()
 
 st.header('Login 🗝️')
-if st.text_input('pwd')==pwd:
+if st.text_input('Enter Password to Login!',type='password')==pwd:
     with open('Login.txt','w') as f:
         f.write('True')
+    st.success('Logged In!')
+else:
+     st.error('Invalid Password')
 
 
