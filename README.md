@@ -1,7 +1,5 @@
 <h1 align="center">
   <br>
-  <a href="http://www.ultraai.com"><img src="https://via.placeholder.com/200x200.png?text=Ultra+AI" alt="Ultra AI" width="200"></a>
-  <br>
   Ultra AI
   <br>
 </h1>
