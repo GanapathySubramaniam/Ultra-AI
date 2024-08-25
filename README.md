@@ -50,20 +50,29 @@
 ## 🚀 Quick Start
 
 <div align="center">
-```bash
+  <pre><code>
+# Clone repository
 git clone https://github.com/GanapathySubramaniam/ultra-ai.git
-```
-```
-cd ultra-ai
-```
-```
-pip install -r requirements.txt
-```
-```
-streamlit run Login.py
-```
 
+# Navigate to directory
+cd ultra-ai
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the app
+streamlit run Login.py
+  </code></pre>
 </div>
+
+<details>
+<summary>📋 Prerequisites</summary>
+<ul>
+  <li>Python 3.7+</li>
+  <li>pip</li>
+  <li>Virtual environment (recommended)</li>
+</ul>
+</details>
 
 <details>
 <summary>📋 Prerequisites</summary>
