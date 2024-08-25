@@ -1,7 +1,3 @@
-<div align="center">
-  <img src="https://via.placeholder.com/1500x300.png?text=Ultra+AI" alt="Ultra AI Banner">
-</div>
-
 <h1 align="center">Ultra AI</h1>
 
 <p align="center">
