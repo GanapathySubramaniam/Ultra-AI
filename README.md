@@ -50,22 +50,20 @@
 ## 🚀 Quick Start
 
 <div align="center">
-
-```bash
 # Clone repository
+```bash
 git clone https://github.com/GanapathySubramaniam/ultra-ai.git
 ```
-```
 # Navigate to directory
+```
 cd ultra-ai
 ```
-
-```
 # Install dependencies
+```
 pip install -r requirements.txt
 ```
-```
 # Run the app
+```
 streamlit run Login.py
 ```
 
