@@ -48,12 +48,8 @@
 
 ## 🎥 Demo
 
-<div align="center">
-  <img src="https://via.placeholder.com/800x450.png?text=Ultra+AI+Demo" alt="Ultra AI Demo">
-</div>
-
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE">Watch Full Demo Video</a>
+  <a href="https://youtu.be/-YeUZHr1w6E">Watch Full Demo Video</a>
 </p>
 
 ---
