@@ -66,7 +66,7 @@ pip install -r requirements.txt
 ```
 ```
 # Run the app
-streamlit run 1_Chat_👽.py
+streamlit run Login.py
 ```
 
 </div>
@@ -118,7 +118,7 @@ streamlit run 1_Chat_👽.py
 
 5. **Run the application**
    ```bash
-   streamlit run 1_Chat_👽.py
+   streamlit run Login.py
    ```
 
 </details>
