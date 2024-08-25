@@ -53,13 +53,17 @@
   <pre><code>
 # Clone repository
 git clone https://github.com/GanapathySubramaniam/ultra-ai.git
-
+</code>
+    <code>
 # Navigate to directory
 cd ultra-ai
+</code>
+<code>
 
 # Install dependencies
 pip install -r requirements.txt
-
+</code>
+<code>
 # Run the app
 streamlit run Login.py
   </code></pre>
