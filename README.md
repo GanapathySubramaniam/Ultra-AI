@@ -2,14 +2,9 @@
 
 > Your All-in-One AI Assistant Powered by Cutting-Edge Technology
 
-[![PyPI version](https://badge.fury.io/py/ultra-ai.svg)](https://badge.fury.io/py/ultra-ai)
-[![Build Status](https://github.com/yourusername/ultra-ai/workflows/Tests/badge.svg)](https://github.com/yourusername/ultra-ai/actions)
-[![codecov](https://codecov.io/gh/yourusername/ultra-ai/branch/main/graph/badge.svg)](https://codecov.io/gh/yourusername/ultra-ai)
-[![CodeFactor](https://www.codefactor.io/repository/github/yourusername/ultra-ai/badge)](https://www.codefactor.io/repository/github/yourusername/ultra-ai)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/yourusername/ultra-ai/blob/main/LICENSE)
 
-[Key Features](#key-features) • [Demo](#demo) • [Quick Start](#quick-start) • [Installation](#installation) • [Usage](#usage) • [Tech Stack](#tech-stack) • [Contributing](#contributing) • [License](#license)
 
+[Key Features](#key-features) • [Demo](#demo) • [Quick Start](#quick-start) • [Installation](#installation) • [Usage](#usage) • [Tech Stack](#tech-stack) 
 ## Key Features
 
 - 💬 **AI-Powered Chat**: Engage in intelligent conversations
@@ -106,24 +101,9 @@ streamlit run 1_Chat_👽.py
 - **Authentication**: Custom implementation with password hashing
 - **Version Control**: Git
 
-## Contributing
 
-We welcome contributions to Ultra AI! Here's how you can help:
 
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
-
-[Website](https://www.ultraai.com) • [Documentation](https://docs.ultraai.com) • [Report Bug](https://github.com/yourusername/ultra-ai/issues) • [Request Feature](https://github.com/yourusername/ultra-ai/issues)
-
-Built with ❤️ by [Your Name](https://github.com/yourusername)****
+you can reach out to me [here] (https://ganapathysubramaniam.github.io/)
+Built with ❤️ by [Ganapathy Subramaniam Sundar ([https://github.com/yourusername](https://github.com/GanapathySubramaniam))****
