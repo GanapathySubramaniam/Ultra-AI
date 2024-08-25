@@ -1,60 +1,34 @@
-<h1 align="center">Ultra AI</h1>
+# Ultra AI
 
-<p align="center">
-  <strong>Your All-in-One AI Assistant Powered by Cutting-Edge Technology</strong>
-</p>
+> Your All-in-One AI Assistant Powered by Cutting-Edge Technology
 
-<p align="center">
-  <a href="https://badge.fury.io/py/ultra-ai"><img src="https://badge.fury.io/py/ultra-ai.svg" alt="PyPI version" height="18"></a>
-  <a href="https://github.com/yourusername/ultra-ai/actions"><img src="https://github.com/yourusername/ultra-ai/workflows/Tests/badge.svg" alt="Build Status"></a>
-  <a href="https://codecov.io/gh/yourusername/ultra-ai"><img src="https://codecov.io/gh/yourusername/ultra-ai/branch/main/graph/badge.svg" alt="codecov"></a>
-  <a href="https://www.codefactor.io/repository/github/yourusername/ultra-ai"><img src="https://www.codefactor.io/repository/github/yourusername/ultra-ai/badge" alt="CodeFactor"></a>
-  <a href="https://github.com/yourusername/ultra-ai/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
-</p>
+[![PyPI version](https://badge.fury.io/py/ultra-ai.svg)](https://badge.fury.io/py/ultra-ai)
+[![Build Status](https://github.com/yourusername/ultra-ai/workflows/Tests/badge.svg)](https://github.com/yourusername/ultra-ai/actions)
+[![codecov](https://codecov.io/gh/yourusername/ultra-ai/branch/main/graph/badge.svg)](https://codecov.io/gh/yourusername/ultra-ai)
+[![CodeFactor](https://www.codefactor.io/repository/github/yourusername/ultra-ai/badge)](https://www.codefactor.io/repository/github/yourusername/ultra-ai)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/yourusername/ultra-ai/blob/main/LICENSE)
 
-<p align="center">
-  <a href="#-key-features">Key Features</a> •
-  <a href="#-demo">Demo</a> •
-  <a href="#-quick-start">Quick Start</a> •
-  <a href="#-installation">Installation</a> •
-  <a href="#%EF%B8%8F-usage">Usage</a> •
-  <a href="#-tech-stack">Tech Stack</a> •
-  <a href="#-contributing">Contributing</a> •
-  <a href="#-license">License</a>
-</p>
+[Key Features](#key-features) • [Demo](#demo) • [Quick Start](#quick-start) • [Installation](#installation) • [Usage](#usage) • [Tech Stack](#tech-stack) • [Contributing](#contributing) • [License](#license)
 
----
+## Key Features
 
-## 🚀 Key Features
+- 💬 **AI-Powered Chat**: Engage in intelligent conversations
+- 🎨 **Image Generation**: Create stunning visuals with DALL-E 3
+- 🗣️ **Voice Interaction**: Talk to your AI assistant
+- ✨ **Prompt Engineering**: Craft perfect prompts for any task
+- 🔐 **Secure Access**: Keep your AI safe with built-in authentication
+- 🌐 **Multi-Language**: Communicate in your preferred language
+- 📊 **Analytics Dashboard**: Track your AI usage and insights
+- 🔄 **Model Switching**: Choose the best AI for each task
+- 📱 **Responsive Design**: Use on desktop, tablet, or mobile
 
-<div align="center">
-  <table>
-    <tr>
-      <td align="center"><img src="https://via.placeholder.com/80x80.png?text=💬" width="80px;" alt=""/><br /><strong>AI Chat</strong></td>
-      <td align="center"><img src="https://via.placeholder.com/80x80.png?text=🎨" width="80px;" alt=""/><br /><strong>Image Gen</strong></td>
-      <td align="center"><img src="https://via.placeholder.com/80x80.png?text=🗣️" width="80px;" alt=""/><br /><strong>Voice AI</strong></td>
-      <td align="center"><img src="https://via.placeholder.com/80x80.png?text=✨" width="80px;" alt=""/><br /><strong>Prompts</strong></td>
-    </tr>
-    <tr>
-      <td align="center"><img src="https://via.placeholder.com/80x80.png?text=🔐" width="80px;" alt=""/><br /><strong>Secure</strong></td>
-      <td align="center"><img src="https://via.placeholder.com/80x80.png?text=🌐" width="80px;" alt=""/><br /><strong>Multilingual</strong></td>
-      <td align="center"><img src="https://via.placeholder.com/80x80.png?text=📊" width="80px;" alt=""/><br /><strong>Analytics</strong></td>
-      <td align="center"><img src="https://via.placeholder.com/80x80.png?text=🔄" width="80px;" alt=""/><br /><strong>AI Switch</strong></td>
-    </tr>
-  </table>
-</div>
+## Demo
 
----
+Check out our Ultra AI in action:
 
-## 🎥 Demo
+[![Ultra AI Demo](https://img.youtube.com/vi/-YeUZHr1w6E/0.jpg)](https://www.youtube.com/watch?v=-YeUZHr1w6E "Ultra AI Demo")
 
-<p align="center">
-  <a href="https://youtu.be/-YeUZHr1w6E">Watch Full Demo Video</a>
-</p>
-
----
-
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
 # Clone repository
@@ -70,21 +44,12 @@ pip install -r requirements.txt
 streamlit run 1_Chat_👽.py
 ```
 
-<details>
-<summary>📋 Prerequisites</summary>
-
+**Prerequisites:**
 - Python 3.7+
 - pip
 - Virtual environment (recommended)
 
-</details>
-
----
-
-## 📦 Installation
-
-<details>
-<summary>📥 Detailed Installation Steps</summary>
+## Installation
 
 1. **Clone the repository**
    ```bash
@@ -120,15 +85,7 @@ streamlit run 1_Chat_👽.py
    streamlit run 1_Chat_👽.py
    ```
 
-</details>
-
----
-
-## 🖥️ Usage
-
-<div align="center">
-  <img src="https://via.placeholder.com/800x400.png?text=Ultra+AI+Interface" alt="Ultra AI Interface">
-</div>
+## Usage
 
 1. **Login**: Enter your password to access the app.
 2. **Chat**: Start conversations with the AI.
@@ -136,30 +93,20 @@ streamlit run 1_Chat_👽.py
 4. **Voice Interaction**: Speak with the AI assistant.
 5. **Prompt Engineering**: Craft custom AI prompts.
 
----
+## Tech Stack
 
-## 🛠 Tech Stack
+- **Frontend**: Streamlit
+- **AI Models**: 
+  - Claude (Anthropic) for advanced language processing
+  - GPT-3.5 (OpenAI) for quick responses
+  - DALL-E 3 (OpenAI) for image generation
+  - Whisper (OpenAI) for speech recognition
+- **Text-to-Speech**: OpenAI's TTS model
+- **Backend**: Python 3.7+
+- **Authentication**: Custom implementation with password hashing
+- **Version Control**: Git
 
-<div align="center">
-  <table>
-    <tr>
-      <td align="center"><img src="https://via.placeholder.com/60x60.png?text=🐍" width="60px;" alt=""/><br /><sub><b>Python</b></sub></td>
-      <td align="center"><img src="https://via.placeholder.com/60x60.png?text=🌊" width="60px;" alt=""/><br /><sub><b>Streamlit</b></sub></td>
-      <td align="center"><img src="https://via.placeholder.com/60x60.png?text=🧠" width="60px;" alt=""/><br /><sub><b>Claude</b></sub></td>
-      <td align="center"><img src="https://via.placeholder.com/60x60.png?text=🤖" width="60px;" alt=""/><br /><sub><b>GPT-3.5</b></sub></td>
-    </tr>
-    <tr>
-      <td align="center"><img src="https://via.placeholder.com/60x60.png?text=🎨" width="60px;" alt=""/><br /><sub><b>DALL-E 3</b></sub></td>
-      <td align="center"><img src="https://via.placeholder.com/60x60.png?text=🗣️" width="60px;" alt=""/><br /><sub><b>Whisper</b></sub></td>
-      <td align="center"><img src="https://via.placeholder.com/60x60.png?text=🔐" width="60px;" alt=""/><br /><sub><b>Auth</b></sub></td>
-      <td align="center"><img src="https://via.placeholder.com/60x60.png?text=🔄" width="60px;" alt=""/><br /><sub><b>Git</b></sub></td>
-    </tr>
-  </table>
-</div>
-
----
-
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions to Ultra AI! Here's how you can help:
 
@@ -171,20 +118,12 @@ We welcome contributions to Ultra AI! Here's how you can help:
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
 
----
-
-## 📜 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-<div align="center">
+[Website](https://www.ultraai.com) • [Documentation](https://docs.ultraai.com) • [Report Bug](https://github.com/yourusername/ultra-ai/issues) • [Request Feature](https://github.com/yourusername/ultra-ai/issues)
 
-**[Website](https://www.ultraai.com)** • **[Documentation](https://docs.ultraai.com)** • **[Report Bug](https://github.com/yourusername/ultra-ai/issues)** • **[Request Feature](https://github.com/yourusername/ultra-ai/issues)**
-
-</div>
-
-<div align="center">
-  <sub>Built with ❤️ by <a href="https://github.com/yourusername">Your Name</a></sub>
-</div>
+Built with ❤️ by [Your Name](https://github.com/yourusername)****
