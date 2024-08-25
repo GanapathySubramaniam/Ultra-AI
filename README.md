@@ -1,5 +1,4 @@
 <div align="center">
-  <img src="https://via.placeholder.com/1500x300.png?text=Ultra+AI" alt="Ultra AI Banner">
   <h1>Ultra AI</h1>
   <p><em>Your All-in-One AI Assistant Powered by Cutting-Edge Technology</em></p>
 </div>
@@ -10,13 +9,7 @@
   
 </div>
 
-<div align="center">
-  <a href="https://badge.fury.io/py/ultra-ai"><img src="https://badge.fury.io/py/ultra-ai.svg" alt="PyPI version" /></a>
-  <a href="https://github.com/GanapathySubramaniam/ultra-ai/actions"><img src="https://github.com/GanapathySubramaniam/ultra-ai/workflows/Tests/badge.svg" alt="Build Status" /></a>
-  <a href="https://codecov.io/gh/GanapathySubramaniam/ultra-ai"><img src="https://codecov.io/gh/GanapathySubramaniam/ultra-ai/branch/main/graph/badge.svg" alt="codecov" /></a>
-  <a href="https://www.codefactor.io/repository/github/GanapathySubramaniam/ultra-ai"><img src="https://www.codefactor.io/repository/github/GanapathySubramaniam/ultra-ai/badge" alt="CodeFactor" /></a>
-  <a href="https://github.com/GanapathySubramaniam/ultra-ai/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT" /></a>
-</div>
+
 
 ---
 
@@ -61,13 +54,17 @@
 ```bash
 # Clone repository
 git clone https://github.com/GanapathySubramaniam/ultra-ai.git
-
+```
+```
 # Navigate to directory
 cd ultra-ai
+```
 
+```
 # Install dependencies
 pip install -r requirements.txt
-
+```
+```
 # Run the app
 streamlit run 1_Chat_👽.py
 ```
