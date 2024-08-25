@@ -50,7 +50,7 @@
 <div align="center">
 
 ```bash
-git clone https://github.com/GanapathySubramaniam/ultra-ai.git
+git clone https://github.com/GanapathySubramaniam/God-s-eye.git
 ```
 ```
 cd ultra-ai
@@ -82,7 +82,7 @@ streamlit run Login.py
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/GanapathySubramaniam/ultra-ai.git
+   git clone https://github.com/GanapathySubramaniam/God-s-eye.git
    cd ultra-ai
    ```
 
