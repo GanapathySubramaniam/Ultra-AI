@@ -1,23 +1,11 @@
-<h1 align="center">
-  <br>
-  Ultra AI
-  <br>
-</h1>
+<div align="center">
+  <img src="https://via.placeholder.com/1500x300.png?text=Ultra+AI" alt="Ultra AI Banner">
+</div>
 
-<h4 align="center">Your All-in-One AI Assistant Powered by Cutting-Edge Technology</h4>
+<h1 align="center">Ultra AI</h1>
 
 <p align="center">
-  <a href="#key-features">Key Features</a> •
-  <a href="#demo">Demo</a> •
-  <a href="#how-to-use">How To Use</a> •
-  <a href="#tech-stack">Tech Stack</a> •
-  <a href="#installation">Installation</a> •
-  <a href="#configuration">Configuration</a> •
-  <a href="#license">License</a>
-</p>
-
-<p align="center">
-  <img src="https://via.placeholder.com/700x400.png?text=Ultra+AI+Demo" alt="Ultra AI Demo">
+  <strong>Your All-in-One AI Assistant Powered by Cutting-Edge Technology</strong>
 </p>
 
 <p align="center">
@@ -28,78 +16,83 @@
   <a href="https://github.com/yourusername/ultra-ai/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
 </p>
 
-## Key Features
-
-* 🧠 **AI-Powered Chat** - Engage in intelligent conversations
-* 🎨 **Image Generation** - Create stunning visuals with DALL-E 3
-* 🗣️ **Voice Interaction** - Talk to your AI assistant
-* ✨ **Prompt Engineering** - Craft perfect prompts for any task
-* 🔐 **Secure Access** - Keep your AI safe with built-in authentication
-* 🌐 **Multi-Language** - Communicate in your preferred language
-* 📊 **Analytics Dashboard** - Track your AI usage and insights
-* 🔄 **Model Switching** - Choose the best AI for each task
-* 📱 **Responsive Design** - Use on desktop, tablet, or mobile
-
 <p align="center">
-  <img src="https://via.placeholder.com/800x400.png?text=Feature+Showcase" alt="Feature Showcase">
+  <a href="#-key-features">Key Features</a> •
+  <a href="#-demo">Demo</a> •
+  <a href="#-quick-start">Quick Start</a> •
+  <a href="#-installation">Installation</a> •
+  <a href="#%EF%B8%8F-usage">Usage</a> •
+  <a href="#-tech-stack">Tech Stack</a> •
+  <a href="#-contributing">Contributing</a> •
+  <a href="#-license">License</a>
 </p>
 
-## Demo
+---
+
+## 🚀 Key Features
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center"><img src="https://via.placeholder.com/80x80.png?text=💬" width="80px;" alt=""/><br /><strong>AI Chat</strong></td>
+      <td align="center"><img src="https://via.placeholder.com/80x80.png?text=🎨" width="80px;" alt=""/><br /><strong>Image Gen</strong></td>
+      <td align="center"><img src="https://via.placeholder.com/80x80.png?text=🗣️" width="80px;" alt=""/><br /><strong>Voice AI</strong></td>
+      <td align="center"><img src="https://via.placeholder.com/80x80.png?text=✨" width="80px;" alt=""/><br /><strong>Prompts</strong></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="https://via.placeholder.com/80x80.png?text=🔐" width="80px;" alt=""/><br /><strong>Secure</strong></td>
+      <td align="center"><img src="https://via.placeholder.com/80x80.png?text=🌐" width="80px;" alt=""/><br /><strong>Multilingual</strong></td>
+      <td align="center"><img src="https://via.placeholder.com/80x80.png?text=📊" width="80px;" alt=""/><br /><strong>Analytics</strong></td>
+      <td align="center"><img src="https://via.placeholder.com/80x80.png?text=🔄" width="80px;" alt=""/><br /><strong>AI Switch</strong></td>
+    </tr>
+  </table>
+</div>
+
+---
+
+## 🎥 Demo
+
+<div align="center">
+  <img src="https://via.placeholder.com/800x450.png?text=Ultra+AI+Demo" alt="Ultra AI Demo">
+</div>
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE">
-    <img src="https://via.placeholder.com/800x450.png?text=Ultra+AI+Demo+Video" alt="Ultra AI Demo Video">
-  </a>
+  <a href="https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE">Watch Full Demo Video</a>
 </p>
 
-## How To Use
+---
 
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Python](https://www.python.org/downloads/) (which comes with [pip](https://pip.pypa.io/en/stable/)) installed on your computer. From your command line:
+## 🚀 Quick Start
 
 ```bash
-# Clone this repository
-$ git clone https://github.com/yourusername/ultra-ai
+# Clone repository
+git clone https://github.com/yourusername/ultra-ai.git
 
-# Go into the repository
-$ cd ultra-ai
+# Navigate to directory
+cd ultra-ai
 
 # Install dependencies
-$ pip install -r requirements.txt
+pip install -r requirements.txt
 
 # Run the app
-$ streamlit run 1_Chat_👽.py
+streamlit run 1_Chat_👽.py
 ```
 
-> **Note**
-> If you're using a Python version < 3.7, you might need to install asyncio: `pip install asyncio`
-
-## Tech Stack
-
-<p align="center">
-  <img src="https://via.placeholder.com/900x300.png?text=Tech+Stack+Visualization" alt="Tech Stack">
-</p>
-
-- **Frontend**: [Streamlit](https://streamlit.io/) - For rapid AI app development
-- **AI Models**: 
-  - [Claude](https://www.anthropic.com) - Advanced language processing
-  - [GPT-3.5](https://openai.com/api/) - Quick responses and task completion
-  - [DALL-E 3](https://openai.com/dall-e-3) - State-of-the-art image generation
-  - [Whisper](https://openai.com/research/whisper) - Robust speech recognition
-- **Text-to-Speech**: OpenAI's TTS model
-- **Backend**: Python 3.7+
-- **Authentication**: Custom implementation with password hashing
-- **Version Control**: Git
-- **CI/CD**: GitHub Actions (coming soon)
-
-## Installation
-
-### Prerequisites
+<details>
+<summary>📋 Prerequisites</summary>
 
 - Python 3.7+
 - pip
 - Virtual environment (recommended)
 
-### Step-by-step guide
+</details>
+
+---
+
+## 📦 Installation
+
+<details>
+<summary>📥 Detailed Installation Steps</summary>
 
 1. **Clone the repository**
    ```bash
@@ -118,38 +111,88 @@ $ streamlit run 1_Chat_👽.py
    pip install -r requirements.txt
    ```
 
-## Configuration
+4. **Configuration**
+   - Create `.env` in `models/` directory:
+     ```ini
+     OPENAI=your_openai_api_key_here
+     ANTHROPIC=your_anthropic_api_key_here
+     ```
+   - Set password in `pwd.txt`:
+     ```
+     your_chosen_password_here
+     ```
+     > ⚠️ Use a strong, unique password. Never share or commit this file.
 
-1. **Set up environment variables**
-
-   Create a `.env` file in the `models` directory:
-
-   ```ini
-   OPENAI=your_openai_api_key_here
-   ANTHROPIC=your_anthropic_api_key_here
+5. **Run the application**
+   ```bash
+   streamlit run 1_Chat_👽.py
    ```
 
-2. **Set your password**
-
-   Edit `pwd.txt`:
-
-   ```
-   your_chosen_password_here
-   ```
-
-   > ⚠️ **Warning**
-   > Choose a strong, unique password. Never share or commit this file to version control.
-
-3. **Configure Streamlit (optional)**
-
-   Customize `.streamlit/config.toml` for app appearance and behavior.
-
-## License
-
-MIT
+</details>
 
 ---
 
-> [ultraai.com](https://www.ultraai.com) &nbsp;&middot;&nbsp;
-> GitHub [@yourusername](https://github.com/yourusername) &nbsp;&middot;&nbsp;
-> Twitter [@yourusername](https://twitter.com/yourusername)
+## 🖥️ Usage
+
+<div align="center">
+  <img src="https://via.placeholder.com/800x400.png?text=Ultra+AI+Interface" alt="Ultra AI Interface">
+</div>
+
+1. **Login**: Enter your password to access the app.
+2. **Chat**: Start conversations with the AI.
+3. **Image Generation**: Describe and create images.
+4. **Voice Interaction**: Speak with the AI assistant.
+5. **Prompt Engineering**: Craft custom AI prompts.
+
+---
+
+## 🛠 Tech Stack
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center"><img src="https://via.placeholder.com/60x60.png?text=🐍" width="60px;" alt=""/><br /><sub><b>Python</b></sub></td>
+      <td align="center"><img src="https://via.placeholder.com/60x60.png?text=🌊" width="60px;" alt=""/><br /><sub><b>Streamlit</b></sub></td>
+      <td align="center"><img src="https://via.placeholder.com/60x60.png?text=🧠" width="60px;" alt=""/><br /><sub><b>Claude</b></sub></td>
+      <td align="center"><img src="https://via.placeholder.com/60x60.png?text=🤖" width="60px;" alt=""/><br /><sub><b>GPT-3.5</b></sub></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="https://via.placeholder.com/60x60.png?text=🎨" width="60px;" alt=""/><br /><sub><b>DALL-E 3</b></sub></td>
+      <td align="center"><img src="https://via.placeholder.com/60x60.png?text=🗣️" width="60px;" alt=""/><br /><sub><b>Whisper</b></sub></td>
+      <td align="center"><img src="https://via.placeholder.com/60x60.png?text=🔐" width="60px;" alt=""/><br /><sub><b>Auth</b></sub></td>
+      <td align="center"><img src="https://via.placeholder.com/60x60.png?text=🔄" width="60px;" alt=""/><br /><sub><b>Git</b></sub></td>
+    </tr>
+  </table>
+</div>
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions to Ultra AI! Here's how you can help:
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+<div align="center">
+
+**[Website](https://www.ultraai.com)** • **[Documentation](https://docs.ultraai.com)** • **[Report Bug](https://github.com/yourusername/ultra-ai/issues)** • **[Request Feature](https://github.com/yourusername/ultra-ai/issues)**
+
+</div>
+
+<div align="center">
+  <sub>Built with ❤️ by <a href="https://github.com/yourusername">Your Name</a></sub>
+</div>
