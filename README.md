@@ -1,33 +1,66 @@
-# Ultra AI
+<div align="center">
+  <img src="https://via.placeholder.com/1500x300.png?text=Ultra+AI" alt="Ultra AI Banner">
+  <h1>Ultra AI</h1>
+  <p><em>Your All-in-One AI Assistant Powered by Cutting-Edge Technology</em></p>
+</div>
 
-> Your All-in-One AI Assistant Powered by Cutting-Edge Technology
+<div align="center">
+  
+  [Key Features](#-key-features) • [Demo](#-demo) • [Quick Start](#-quick-start) • [Installation](#-installation) • [Usage](#-usage) • [Tech Stack](#-tech-stack)
+  
+</div>
 
+<div align="center">
+  <a href="https://badge.fury.io/py/ultra-ai"><img src="https://badge.fury.io/py/ultra-ai.svg" alt="PyPI version" /></a>
+  <a href="https://github.com/GanapathySubramaniam/ultra-ai/actions"><img src="https://github.com/GanapathySubramaniam/ultra-ai/workflows/Tests/badge.svg" alt="Build Status" /></a>
+  <a href="https://codecov.io/gh/GanapathySubramaniam/ultra-ai"><img src="https://codecov.io/gh/GanapathySubramaniam/ultra-ai/branch/main/graph/badge.svg" alt="codecov" /></a>
+  <a href="https://www.codefactor.io/repository/github/GanapathySubramaniam/ultra-ai"><img src="https://www.codefactor.io/repository/github/GanapathySubramaniam/ultra-ai/badge" alt="CodeFactor" /></a>
+  <a href="https://github.com/GanapathySubramaniam/ultra-ai/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT" /></a>
+</div>
 
+---
 
-[Key Features](#key-features) • [Demo](#demo) • [Quick Start](#quick-start) • [Installation](#installation) • [Usage](#usage) • [Tech Stack](#tech-stack) 
-## Key Features
+## 🚀 Key Features
 
-- 💬 **AI-Powered Chat**: Engage in intelligent conversations
-- 🎨 **Image Generation**: Create stunning visuals with DALL-E 3
-- 🗣️ **Voice Interaction**: Talk to your AI assistant
-- ✨ **Prompt Engineering**: Craft perfect prompts for any task
-- 🔐 **Secure Access**: Keep your AI safe with built-in authentication
-- 🌐 **Multi-Language**: Communicate in your preferred language
-- 📊 **Analytics Dashboard**: Track your AI usage and insights
-- 🔄 **Model Switching**: Choose the best AI for each task
-- 📱 **Responsive Design**: Use on desktop, tablet, or mobile
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">💬<br><strong>AI-Powered<br>Chat</strong></td>
+      <td align="center">🎨<br><strong>Image<br>Generation</strong></td>
+      <td align="center">🗣️<br><strong>Voice<br>Interaction</strong></td>
+      <td align="center">✨<br><strong>Prompt<br>Engineering</strong></td>
+      <td align="center">🔐<br><strong>Secure<br>Access</strong></td>
+    </tr>
+    <tr>
+      <td align="center">🌐<br><strong>Multi-<br>Language</strong></td>
+      <td align="center">📊<br><strong>Analytics<br>Dashboard</strong></td>
+      <td align="center">🔄<br><strong>Model<br>Switching</strong></td>
+      <td align="center">📱<br><strong>Responsive<br>Design</strong></td>
+      <td align="center">🧠<br><strong>Continuous<br>Learning</strong></td>
+    </tr>
+  </table>
+</div>
 
-## Demo
+---
 
-Check out our Ultra AI in action:
+## 🎥 Demo
 
-[![Ultra AI Demo](https://img.youtube.com/vi/-YeUZHr1w6E/0.jpg)](https://www.youtube.com/watch?v=-YeUZHr1w6E "Ultra AI Demo")
+<div align="center">
+  <h3>Check out Ultra AI in action:</h3>
+  <a href="https://www.youtube.com/watch?v=-YeUZHr1w6E">
+    <img src="https://img.youtube.com/vi/-YeUZHr1w6E/0.jpg" alt="Ultra AI Demo" style="max-width:600px;">
+  </a>
+</div>
 
-## Quick Start
+---
+
+## 🚀 Quick Start
+
+<div align="center">
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/ultra-ai.git
+git clone https://github.com/GanapathySubramaniam/ultra-ai.git
 
 # Navigate to directory
 cd ultra-ai
@@ -39,16 +72,27 @@ pip install -r requirements.txt
 streamlit run 1_Chat_👽.py
 ```
 
-**Prerequisites:**
-- Python 3.7+
-- pip
-- Virtual environment (recommended)
+</div>
 
-## Installation
+<details>
+<summary>📋 Prerequisites</summary>
+<ul>
+  <li>Python 3.7+</li>
+  <li>pip</li>
+  <li>Virtual environment (recommended)</li>
+</ul>
+</details>
+
+---
+
+## 📦 Installation
+
+<details>
+<summary><strong>Click to expand detailed installation steps</strong></summary>
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/ultra-ai.git
+   git clone https://github.com/GanapathySubramaniam/ultra-ai.git
    cd ultra-ai
    ```
 
@@ -80,30 +124,57 @@ streamlit run 1_Chat_👽.py
    streamlit run 1_Chat_👽.py
    ```
 
-## Usage
-
-1. **Login**: Enter your password to access the app.
-2. **Chat**: Start conversations with the AI.
-3. **Image Generation**: Describe and create images.
-4. **Voice Interaction**: Speak with the AI assistant.
-5. **Prompt Engineering**: Craft custom AI prompts.
-
-## Tech Stack
-
-- **Frontend**: Streamlit
-- **AI Models**: 
-  - Claude (Anthropic) for advanced language processing
-  - GPT-3.5 (OpenAI) for quick responses
-  - DALL-E 3 (OpenAI) for image generation
-  - Whisper (OpenAI) for speech recognition
-- **Text-to-Speech**: OpenAI's TTS model
-- **Backend**: Python 3.7+
-- **Authentication**: Custom implementation with password hashing
-- **Version Control**: Git
-
-
-
+</details>
 
 ---
-you can reach out to me [here] (https://ganapathysubramaniam.github.io/)
-Built with ❤️ by [Ganapathy Subramaniam Sundar ([https://github.com/yourusername](https://github.com/GanapathySubramaniam))****
+
+## 🖥️ Usage
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">🔑<br><strong>Login</strong></td>
+      <td align="center">💬<br><strong>Chat</strong></td>
+      <td align="center">🖼️<br><strong>Generate Images</strong></td>
+      <td align="center">🎤<br><strong>Voice Interact</strong></td>
+      <td align="center">✍️<br><strong>Craft Prompts</strong></td>
+    </tr>
+  </table>
+</div>
+
+---
+
+## 🛠 Tech Stack
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center"><strong>Frontend</strong></td>
+      <td align="center"><strong>AI Models</strong></td>
+      <td align="center"><strong>Backend</strong></td>
+      <td align="center"><strong>Other</strong></td>
+    </tr>
+    <tr>
+      <td align="center">Streamlit</td>
+      <td align="center">Claude (Anthropic)<br>GPT-3.5 (OpenAI)<br>DALL-E 3 (OpenAI)<br>Whisper (OpenAI)</td>
+      <td align="center">Python 3.7+</td>
+      <td align="center">Custom Auth<br>Git</td>
+    </tr>
+  </table>
+</div>
+
+---
+
+<div align="center">
+  <h3>Connect with the Creator</h3>
+  <a href="https://ganapathysubramaniam.github.io/" target="_blank">
+    <img src="https://img.shields.io/badge/Portfolio-Visit%20Website-blue?style=for-the-badge&logo=google-chrome" alt="Portfolio">
+  </a>
+  <a href="https://github.com/GanapathySubramaniam" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-Follow-black?style=for-the-badge&logo=github" alt="GitHub">
+  </a>
+</div>
+
+<div align="center">
+  <p>Built with ❤️ by Ganapathy Subramaniam Sundar</p>
+</div>
