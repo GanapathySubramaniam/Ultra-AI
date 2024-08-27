@@ -54,8 +54,14 @@ Get Ultra AI up and running in minutes:
 
 ```bash
 git clone https://github.com/GanapathySubramaniam/God-s-eye.git
+```
+```bash
 cd ultra-ai
+```
+```bash
 pip install -r requirements.txt
+```
+```bash
 streamlit run Login.py
 ```
 
@@ -168,5 +174,5 @@ Powered by industry-leading technologies:
 </div>
 
 <div align="center">
-  <p>Crafted with ❤️ and AI by Ganapathy Subramaniam Sundar</p>
+  <p>Crafted with ❤️ by Ganapathy Subramaniam Sundar</p>
 </div>
