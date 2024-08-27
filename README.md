@@ -173,6 +173,10 @@ Powered by industry-leading technologies:
   </a>
 </div>
 
+<p align="center">
+  <img src="https://media.giphy.com/media/3o7btXJQm5DD8ApubC/giphy.gif" alt="Magic Sparkles">
+</p>
+
 <div align="center">
   <p>Crafted with ❤️ by Ganapathy Subramaniam Sundar</p>
 </div>
