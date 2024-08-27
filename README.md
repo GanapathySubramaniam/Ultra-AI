@@ -53,7 +53,7 @@ Get Ultra AI up and running in minutes:
 <div align="center">
 
 ```bash
-git clone https://github.com/GanapathySubramaniam/God-s-eye.git
+git clone https://github.com/GanapathySubramaniam/Ultra-AI.git
 ```
 ```bash
 cd ultra-ai
@@ -86,7 +86,7 @@ streamlit run Login.py
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/GanapathySubramaniam/God-s-eye.git
+   git clone https://github.com/GanapathySubramaniam/Ultra-AI.git
    cd ultra-ai
    ```
 
