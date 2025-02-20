@@ -3,6 +3,17 @@
   <p><em>Your Intelligent Companion: Where Cutting-Edge AI Meets User-Friendly Design</em></p>
 </div>
 
+```
+
+   _    _ _ _                        _____ 
+  | |  | | | |                 /\   |_   _|
+  | |  | | | |_ _ __ __ _     /  \    | |  
+  | |  | | | __| '__/ _` |   / /\ \   | |  
+  | |__| | | |_| | | (_| |  / ____ \ _| |_ 
+   \____/|_|\__|_|  \__,_| /_/    \_\_____|
+                                           
+                                           
+```
 <div align="center">
   
   [🌟 Key Features](#-key-features) • [🎥 Demo](#-demo) • [🚀 Quick Start](#-quick-start) • [📦 Installation](#-installation) • [🖥️ Usage](#️-usage) • [🛠️ Tech Stack](#️-tech-stack)
